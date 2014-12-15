@@ -1,4 +1,19 @@
 #!/bin/bash
+echo -e '\033[1;34mEEEEEEEEEEEEEEEEEEEEEEEE\e[0m'
+echo -e '\033[1;34mEEEEEEEEEEEEEEEEEEEEEEEE\e[0m'
+echo -e '\033[1;34mEEE\e[0m\033[34m##################\e[0m\033[1;34mEEE\e[0m'
+echo -e '\033[1;34mEEE\e[0m\033[34m##################\e[0m\033[1;34mEEE\e[0m'
+echo -e '\033[1;34mEEE\e[0m\033[34m#####\e[0m\033[1;34mEEEEEEEEEEEEEEEE\e[0m'
+echo -e '\033[1;34mEEE\e[0m\033[34m###############\e[0m\033[1;34mEEEEEE\e[0m'
+echo -e '\033[1;34mEEE\e[0m\033[34m###############\e[0m\033[1;34mEEEEEE\e[0m'
+echo -e '\033[1;34mEEE\e[0m\033[34m#####\e[0m\033[1;34mEEEEEEEEEEEEEEEE\e[0m'
+echo -e '\033[1;34mEEE\e[0m\033[34m##################\e[0m\033[1;34mEEE\e[0m'
+echo -e '\033[1;34mEEE\e[0m\033[34m##################\e[0m\033[1;34mEEE\e[0m'
+echo -e '\033[1;34mEEEEEEEEEEEEEEEEEEEEEEEE\e[0m'
+echo -e '\033[1;34mEEEEEEEEEEEEEEEEEEEEEEEE\e[0m'
+echo '                         '
+echo -e '\033[1;33mE.P.D CENTER // http://epdcenter.es\e[0m'
+
 var1=$1
 
 if [ $var1 = ubuntu_A5 ];
@@ -268,7 +283,7 @@ fi
 if [ $var1 = rockchip ];
 then
 echo 'Installing rockchip flash tool in ~/DEV || Thanks to crewrktablets // http://crewrktablets.de'
-cd DEV
+cd ~/DEV
 wget https://epdcenter.es/images/FTP/rockchip/Linux_Upgrade_Tool_v1.21.zip
 sleep 5
 chmod 644 Linux_Upgrade_Tool_v1.21.zip
