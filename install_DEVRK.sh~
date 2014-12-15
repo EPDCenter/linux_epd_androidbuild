@@ -28,7 +28,7 @@ cd DEV
 git clone https://github.com/EPDCenterSpain/rk-prebuilts.git
 sleep 20
 chmod 777 -R rk-prebuilts
-cd
+cd 
 echo 'Done'
 echo 'thanks to E.P.D. Center // http://epdcenter.es'
 fi
@@ -60,10 +60,12 @@ cd DEV
 git clone https://github.com/EPDCenterSpain/rk-prebuilts.git
 sleep 20
 chmod 777 -R rk-prebuilts
-cd
+cd 
 echo 'Done'
 echo 'thanks to E.P.D. Center // http://epdcenter.es'
 fi
+
+
 if [ $var1 = opensuse_A5 ];
 then
 echo 'Installing dependencies of opensuse 13.x and OpenJDK 7'
@@ -91,41 +93,11 @@ cd DEV
 git clone https://github.com/EPDCenterSpain/rk-prebuilts.git
 sleep 20
 chmod 777 -R rk-prebuilts
-cd
+cd 
 echo 'Done'
 echo 'thanks to E.P.D. Center // http://epdcenter.es'
 fi
-if [ $var1 = opensuse_A4 ];
-then
-echo 'Installing dependencies of opensuse 13.x and OpenJDK 7'
-sudo zypper install git gnupg ccache lzop flex bison gperf build-essential zip curl zlib1g-dev zlib1g-dev:i386 libc6-dev lib32bz2-1.0 lib32ncurses5-dev x11proto-core-dev libx11-dev:i386 libreadline6-dev:i386 lib32z1-dev libgl1-mesa-glx:i386 libgl1-mesa-dev g++-multilib mingw32 tofrodos python-markdown libxml2-utils xsltproc libreadline6-dev lib32readline-gplv2-dev libncurses5-dev bzip2 libbz2-dev libbz2-1.0 libghc-bzlib-dev lib32bz2-dev squashfs-tools pngcrush schedtool dpkg-dev java-1_6_0-openjdk-devel java-1_6_0-openjdk 
-sleep 20
-echo 'Installing CCACHE in your .bashrc thanks to crewrktablets'
-echo "export USE_CCACHE=1" >> ~/.bashrc
-echo 'CCACHE directory ~/CCACHE'
-mkdir ~/CCACHE
-chmod 777 -R ~/CCACHE
-echo "export CCACHE_DIR=~/CCACHE" >> ~/.bashrc
-ccache -M 30GB ~/CCACHE
-echo 'Installing REPO'
-mkdir -p ~/bin
-chmod 777 ~/bin
-curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
-chmod a+x ~/bin/repo
-echo 'Installing REPO in your .bashrc'
-echo "export PATH=~/bin:$PATH" >> ~/.bashrc
-echo "umask 022" >> ~/.bashrc
-echo 'Downloading prebuilts tools (arm-eabi 4.6) ~/DEV'
-mkdir DEV
-chmod 777 -R DEV
-cd DEV
-git clone https://github.com/EPDCenterSpain/rk-prebuilts.git
-sleep 20
-chmod 777 -R rk-prebuilts
-cd
-echo 'Done'
-echo 'thanks to E.P.D. Center // http://epdcenter.es'
-fi
+
 
 if [ $var1 = arch_A5 ];
 then
@@ -157,7 +129,7 @@ cd DEV
 git clone https://github.com/EPDCenterSpain/rk-prebuilts.git
 sleep 20
 chmod 777 -R rk-prebuilts
-cd
+cd 
 echo 'Done'
 echo 'thanks to E.P.D. Center // http://epdcenter.es'
 fi
@@ -178,7 +150,7 @@ echo "export USE_CCACHE=1" >> ~/.bashrc
 echo 'CCACHE directory ~/CCACHE'
 mkdir ~/CCACHE
 chmod 777 -R ~/CCACHE
-echo "export CCACHE_DIR=~/CCACHE" >> ~/.bashrc
+echo "export CCACHE_DIR=~/CCACHE" >> ~/.bashrc 
 ccache -M 30GB ~/CCACHE
 echo 'Installing REPO'
 mkdir -p ~/bin
@@ -195,7 +167,7 @@ cd DEV
 git clone https://github.com/EPDCenterSpain/rk-prebuilts.git
 sleep 20
 chmod 777 -R rk-prebuilts
-cd
+cd 
 echo 'Done'
 echo 'thanks to E.P.D. Center // http://epdcenter.es'
 fi
@@ -243,7 +215,7 @@ echo "export USE_CCACHE=1" >> ~/.bashrc
 echo 'CCACHE directory ~/CCACHE'
 mkdir ~/CCACHE
 chmod 777 -R ~/CCACHE
-echo "export CCACHE_DIR=~/CCACHE" >> ~/.bashrc
+echo "export CCACHE_DIR=~/CCACHE" >> ~/.bashrc 
 ccache -M 30GB ~/CCACHE
 echo 'Installing REPO'
 mkdir -p ~/bin
@@ -261,12 +233,12 @@ cd DEV
 git clone https://github.com/EPDCenterSpain/rk-prebuilts.git
 chmod 777 -R rk-prebuilts
 sleep 20
-cd
+cd 
 echo 'Done'
 echo 'thanks to E.P.D. Center // http://epdcenter.es'
 fi
 if [ $var1 = rockchip ];
-then
+then 
 echo 'Installing rockchip flash tool in ~/DEV || Thanks to crewrktablets // http://crewrktablets.de'
 cd DEV
 wget https://epdcenter.es/images/FTP/rockchip/Linux_Upgrade_Tool_v1.21.zip
