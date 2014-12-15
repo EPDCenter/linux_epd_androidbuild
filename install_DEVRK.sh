@@ -10,6 +10,7 @@ echo 'Installing CCACHE in your .bashrc thanks to crewrktablets'
 echo "export USE_CCACHE=1" >> ~/.bashrc
 echo 'CCACHE directory ~/CCACHE'
 mkdir ~/CCACHE
+chmod 777 -R ~/CCACHE
 echo "export CCACHE_DIR=~/CCACHE" >> ~/.bashrc
 ccache -M 30GB ~/CCACHE
 echo 'Installing REPO'
@@ -22,7 +23,7 @@ echo "export PATH=~/bin:$PATH" >> ~/.bashrc
 echo "umask 022" >> ~/.bashrc
 echo 'Downloading prebuilts tools (arm-eabi 4.6) ~/DEV'
 mkdir DEV
-chmod 777 DEV
+chmod 777 -R DEV
 cd DEV
 git clone https://github.com/EPDCenterSpain/rk-prebuilts.git
 sleep 20
@@ -41,6 +42,7 @@ echo 'Installing CCACHE in your .bashrc thanks to crewrktablets.de'
 echo "export USE_CCACHE=1" >> ~/.bashrc
 echo 'CCACHE directory ~/CCACHE'
 mkdir ~/CCACHE
+chmod 777 ~/CCACHE
 echo "export CCACHE_DIR=~/CCACHE" >> ~/.bashrc
 ccache -M 30GB ~/CCACHE
 echo 'Installing REPO'
@@ -53,7 +55,7 @@ echo "export PATH=~/bin:$PATH" >> ~/.bashrc
 echo "umask 022" >> ~/.bashrc
 echo 'Downloading prebuilts tools (arm-eabi 4.6) in ~/DEV'
 mkdir DEV
-chmod 777 DEV
+chmod 777 -R DEV
 cd DEV
 git clone https://github.com/EPDCenterSpain/rk-prebuilts.git
 sleep 20
@@ -75,11 +77,12 @@ echo 'Installing CCACHE in your .bashrc thanks to crewrktablets.de'
 echo "export USE_CCACHE=1" >> ~/.bashrc
 echo 'CCACHE directory ~/CCACHE'
 mkdir ~/CCACHE
+chmod 777 -R ~/CCACHE
 echo "export CCACHE_DIR=~/CCACHE"  >> ~/.bashrc
 ccache -M 30GB ~/CCACHE
 echo 'Installing REPO'
 mkdir -p ~/bin
-chmod 777 ~/bin
+chmod 777 -R ~/bin
 curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 chmod a+x ~/bin/repo
 echo 'Installing REPO in your .bashrc'
@@ -87,7 +90,7 @@ echo "export PATH=~/bin:$PATH" >> ~/.bashrc
 echo "umask 022" >> ~/.bashrc
 echo 'Downloading prebuilts tools (arm-eabi 4.6) in ~/DEV'
 mkdir DEV
-chmod 777 DEV
+chmod 777 -R DEV
 cd DEV
 git clone https://github.com/EPDCenterSpain/rk-prebuilts.git
 sleep 20
@@ -112,6 +115,7 @@ echo 'Installing CCACHE in your .bashrc thanks to crewrktablets.de'
 echo "export USE_CCACHE=1" >> ~/.bashrc
 echo 'CCACHE directory ~/CCACHE'
 mkdir ~/CCACHE
+chmod 777 -R ~/CCACHE
 echo "export CCACHE_DIR=~/CCACHE" >> ~/.bashrc 
 ccache -M 30GB ~/CCACHE
 echo 'Installing REPO'
@@ -140,8 +144,13 @@ echo 'Installing dependencies of Fedora and OpenJDK7'
 yum install glibc.i686 glibc-devel.i686 libstdc++.i686 zlib-devel.i686 \ ncurses-devel.i686 libX11-devel.i686 libXrender.i686 libXrandr.i686 gcc gcc-c++ gperf \ flex bison glibc-devel.{x86_64,i686} zlib-devel.{x86_64,i686} ncurses-devel.i686 libsx-devel \ readline-devel.i686 perl-Switch git gpg java-1.7.0-openjdk-devel.x86_64 schedtool
 sleep 20
 echo "export EXPERIMENTAL_USE_JAVA7=true" >> ~/.bashrc
-echo 'Installing CCACHE in your .bashrc'
+echo 'Installing CCACHE in your .bashrc thanks to crewrktablets.de'
 echo "export USE_CCACHE=1" >> ~/.bashrc
+echo 'CCACHE directory ~/CCACHE'
+mkdir ~/CCACHE
+chmod 777 -R ~/CCACHE
+echo "export CCACHE_DIR=~/CCACHE" >> ~/.bashrc
+ccache -M 30GB ~/CCACHE
 echo 'Installing REPO'
 mkdir -p ~/bin
 chmod 777 ~/bin
@@ -153,7 +162,7 @@ echo "export PATH=~/bin:$PATH" >> ~/.bashrc
 echo "umask 022" >> ~/.bashrc
 echo 'Downloading prebuilts tools (arm-eabi 4.6) in ~/DEV'
 mkdir DEV
-chmod 777 DEV
+chmod 777 -R DEV
 cd DEV
 git clone https://github.com/EPDCenterSpain/rk-prebuilts.git
 sleep 20
@@ -167,8 +176,13 @@ then
 echo 'Installing dependencies of Fedora and OpenJDK6'
 yum install glibc.i686 glibc-devel.i686 libstdc++.i686 android-tools zlib-devel.i686 \ ncurses-devel.i686 libX11-devel.i686 libXrender.i686 libXrandr.i686 gcc gcc-c++ gperf \ flex bison glibc-devel.{x86_64,i686} zlib-devel.{x86_64,i686} ncurses-devel.i686 libsx-devel \ readline-devel.i686 perl-Switch git gpg java-1.7.0-openjdk-devel.x86_64 schedtool java-1.6.0-openjdk-devel
 sleep 20
-echo 'Installing CCACHE in your .bashrc'
+echo 'Installing CCACHE in your .bashrc thanks to crewrktablets.de'
 echo "export USE_CCACHE=1" >> ~/.bashrc
+echo 'CCACHE directory ~/CCACHE'
+mkdir ~/CCACHE
+chmod 777 -R ~/CCACHE
+echo "export CCACHE_DIR=~/CCACHE" >> ~/.bashrc 
+ccache -M 30GB ~/CCACHE
 echo 'Installing REPO'
 mkdir -p ~/bin
 chmod 777 ~/bin
@@ -180,7 +194,7 @@ echo "export PATH=~/bin:$PATH" >> ~/.bashrc
 echo "umask 022" >> ~/.bashrc
 echo 'Downloading prebuilts tools (arm-eabi 4.6) in ~/DEV'
 mkdir DEV
-chmod 777 DEV
+chmod 777 -R DEV
 cd DEV
 git clone https://github.com/EPDCenterSpain/rk-prebuilts.git
 chmod 777 -R rk-prebuilts
