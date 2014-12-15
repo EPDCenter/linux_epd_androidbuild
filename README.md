@@ -3,7 +3,7 @@ E.P.D. CENTER // epdcenter.es
 
 ||This script installs all packages and configures your distribution for building Android 4.X > 5.X || 
 
-||This script must be in your home folder!, example:||
+||This script must be in your home folder!, example:
 
 $/home/example/install_DEVRK.sh
 
