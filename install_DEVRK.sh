@@ -68,7 +68,7 @@ fi
 if [ $var1 = arch_A5 ];
 then
 echo 'Installing dependencies of ArchLinux and OpenJDK 7, you needs multilib repository in /etc/pacman.conf and yaourt'
-pacman -Syyu  android-tools base-devel jre7-openjdk-headless jre7-openjdk jdk7-openjdk gcc git gnupg flex bison gperf sdl wxgtk squashfs-tools curl ncurses zlib schedtool perl-switch zip unzip libxslt libxml2 lzo lzop python2 gcc-multilib lib32-zlib lib32-ncurses lib32-readline python-virtualenvwrapper
+pacman -Syyu  ccache android-tools base-devel jre7-openjdk-headless jre7-openjdk jdk7-openjdk gcc git gnupg flex bison gperf sdl wxgtk squashfs-tools curl ncurses zlib schedtool perl-switch zip unzip libxslt libxml2 lzo lzop python2 gcc-multilib lib32-zlib lib32-ncurses lib32-readline python-virtualenvwrapper
 sleep 5
 source /usr/bin/virtualenvwrapper.h
 mkvirtualenv -p `which python2` python2
@@ -103,7 +103,7 @@ fi
 if [ $var1 = arch_A4 ];
 then
 echo 'Installing dependencies of ArchLinux and OpenJDK 7, you needs multilib repository in /etc/pacman.conf and yaourt'
-pacman -Syyu  android-tools base-devel gcc git gnupg flex bison gperf sdl wxgtk squashfs-tools curl ncurses zlib schedtool perl-switch zip unzip libxslt libxml2 lzo lzop python2 gcc-multilib lib32-zlib lib32-ncurses lib32-readline python-virtualenvwrapper
+pacman -Syyu ccache  android-tools base-devel gcc git gnupg flex bison gperf sdl wxgtk squashfs-tools curl ncurses zlib schedtool perl-switch zip unzip libxslt libxml2 lzo lzop python2 gcc-multilib lib32-zlib lib32-ncurses lib32-readline python-virtualenvwrapper
 sleep 5
 yaourt -S jre6 jdk6
 sleep 5
@@ -141,7 +141,7 @@ fi
 if [ $var1 = fedora_A5 ];
 then
 echo 'Installing dependencies of Fedora and OpenJDK7'
-yum install glibc.i686 glibc-devel.i686 libstdc++.i686 zlib-devel.i686 \ ncurses-devel.i686 libX11-devel.i686 libXrender.i686 libXrandr.i686 gcc gcc-c++ gperf \ flex bison glibc-devel.{x86_64,i686} zlib-devel.{x86_64,i686} ncurses-devel.i686 libsx-devel \ readline-devel.i686 perl-Switch git gpg java-1.7.0-openjdk-devel.x86_64 schedtool
+yum install glibc.i686 ccache glibc-devel.i686 libstdc++.i686 zlib-devel.i686 \ ncurses-devel.i686 libX11-devel.i686 libXrender.i686 libXrandr.i686 gcc gcc-c++ gperf \ flex bison glibc-devel.{x86_64,i686} zlib-devel.{x86_64,i686} ncurses-devel.i686 libsx-devel \ readline-devel.i686 perl-Switch git gpg java-1.7.0-openjdk-devel.x86_64 schedtool
 sleep 20
 echo "export EXPERIMENTAL_USE_JAVA7=true" >> ~/.bashrc
 echo 'Installing CCACHE in your .bashrc thanks to crewrktablets.de'
@@ -174,7 +174,7 @@ fi
 if [ $var1 = fedora_A4 ];
 then
 echo 'Installing dependencies of Fedora and OpenJDK6'
-yum install glibc.i686 glibc-devel.i686 libstdc++.i686 android-tools zlib-devel.i686 \ ncurses-devel.i686 libX11-devel.i686 libXrender.i686 libXrandr.i686 gcc gcc-c++ gperf \ flex bison glibc-devel.{x86_64,i686} zlib-devel.{x86_64,i686} ncurses-devel.i686 libsx-devel \ readline-devel.i686 perl-Switch git gpg java-1.7.0-openjdk-devel.x86_64 schedtool java-1.6.0-openjdk-devel
+yum install glibc.i686 ccache glibc-devel.i686 libstdc++.i686 android-tools zlib-devel.i686 \ ncurses-devel.i686 libX11-devel.i686 libXrender.i686 libXrandr.i686 gcc gcc-c++ gperf \ flex bison glibc-devel.{x86_64,i686} zlib-devel.{x86_64,i686} ncurses-devel.i686 libsx-devel \ readline-devel.i686 perl-Switch git gpg java-1.7.0-openjdk-devel.x86_64 schedtool java-1.6.0-openjdk-devel
 sleep 20
 echo 'Installing CCACHE in your .bashrc thanks to crewrktablets.de'
 echo "export USE_CCACHE=1" >> ~/.bashrc
