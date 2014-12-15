@@ -1,7 +1,7 @@
 E.P.D. CENTER // epdcenter.es
 =============================
 
-||This script installs all packages and configures your distribution for building Android 4.X > 5.X || 
+||This script installs all packages and configure your distribution for building Android 4.X > 5.X || 
 
 ||This script must be in your home folder!, example:
 
@@ -29,7 +29,7 @@ $./install_DEVRK.sh fedora_A4 // For Fedora and Android 4.x.
 
 ||DEV
 
--If you have rockchip, you can download the tools for you gadget.
+-If you have rockchip, you can download the tools and configure your system for your gadget.
 
 $./install_DEVRK.sh rockchip
 
