@@ -23,11 +23,7 @@ apt-get install git-core gnupg android-tools-adb flex bison gperf libsdl1.2-dev 
 sleep 20
 echo '\033[1;31mInstalling CCACHE in your .bashrc thanks to crewrktablets\e[0m'
 echo "export USE_CCACHE=1" >> ~/.bashrc
-echo '\033[1;31mCCACHE directory in ~/CCACHE\e[0m'
-mkdir ~/CCACHE
-chmod 777 -R ~/CCACHE
-echo "export CCACHE_DIR=~/CCACHE" >> ~/.bashrc
-ccache -M 30GB ~/CCACHE
+ccache -M 30GB ~/.ccache
 echo '\033[1;31mInstalling REPO\e[0m'
 mkdir -p ~/bin
 chmod 777 ~/bin
@@ -47,7 +43,6 @@ cd
 echo '\033[1;33mDone\e[0m'
 echo '\033[1;33mThanks to E.P.D. Center // http://epdcenter.es\e[0m'
 fi
-
 if [ $var1 = ubuntu_A4 ];
 then
 echo '\033[1;31mInstalling dependencies of Ubuntu 14.04 and OpenJDK 6\e[0m'
@@ -55,11 +50,7 @@ apt-get install git-core gnupg flex bison gperf android-tools-adb libsdl1.2-dev 
 sleep 20
 echo '\033[1;31mInstalling CCACHE in your .bashrc thanks to crewrktablets.de\e[0m'
 echo "export USE_CCACHE=1" >> ~/.bashrc
-echo '\033[1;31mCCACHE directory in ~/CCACHE\e[0m'
-mkdir ~/CCACHE
-chmod 777 ~/CCACHE
-echo "export CCACHE_DIR=~/CCACHE" >> ~/.bashrc
-ccache -M 30GB ~/CCACHE
+ccache -M 30GB ~/.ccache
 echo '\033[1;31mInstalling REPO\e[0m'
 mkdir -p ~/bin
 chmod 777 ~/bin
@@ -86,11 +77,7 @@ sudo zypper install git gnupg ccache lzop flex bison gperf build-essential zip c
 sleep 20
 echo '\033[1;31mInstalling CCACHE in your .bashrc thanks to crewrktablets\e[0m'
 echo "export USE_CCACHE=1" >> ~/.bashrc
-echo '\033[1;31mCCACHE directory in ~/CCACHE\e[0m'
-mkdir ~/CCACHE
-chmod 777 -R ~/CCACHE
-echo "export CCACHE_DIR=~/CCACHE" >> ~/.bashrc
-ccache -M 30GB ~/CCACHE
+ccache -M 30GB ~/.ccache
 echo '\033[1;31mInstalling REPO\e[0m'
 mkdir -p ~/bin
 chmod 777 ~/bin
@@ -117,10 +104,6 @@ zypper install git gnupg ccache lzop flex bison gperf build-essential zip curl z
 sleep 20
 echo '\033[1;31mInstalling CCACHE in your .bashrc thanks to crewrktablets\e[0m'
 echo "export USE_CCACHE=1" >> ~/.bashrc
-echo '\033[1;31mCCACHE directory in ~/CCACHE'
-mkdir ~/CCACHE
-chmod 777 -R ~/CCACHE
-echo "export CCACHE_DIR=~/CCACHE" >> ~/.bashrc
 ccache -M 30GB ~/CCACHE
 echo '\033[1;31mInstalling REPO\e[0m'
 mkdir -p ~/bin
@@ -152,11 +135,7 @@ mkvirtualenv -p `which python2` python2
 workon python2
 echo '\033[1;31mInstalling CCACHE in your .bashrc thanks to crewrktablets.de\e[0m'
 echo "export USE_CCACHE=1" >> ~/.bashrc
-echo '\033[1;31mCCACHE directory in ~/CCACHE\e[0m'
-mkdir ~/CCACHE
-chmod 777 -R ~/CCACHE
-echo "export CCACHE_DIR=~/CCACHE"  >> ~/.bashrc
-ccache -M 30GB ~/CCACHE
+ccache -M 30GB ~/.ccache
 echo '\033[1;31mInstalling REPO\e[0m'
 mkdir -p ~/bin
 chmod 777 -R ~/bin
@@ -191,10 +170,7 @@ sleep 10
 echo '\033[1;31mInstalling CCACHE in your .bashrc thanks to crewrktablets.de\e[0m'
 echo "export USE_CCACHE=1" >> ~/.bashrc
 echo '\033[1;31mCCACHE directory in ~/CCACHE\e[0m'
-mkdir ~/CCACHE
-chmod 777 -R ~/CCACHE
-echo "export CCACHE_DIR=~/CCACHE" >> ~/.bashrc
-ccache -M 30GB ~/CCACHE
+ccache -M 30GB ~/.ccache
 echo '\033[1;31mInstalling REPO\e[0m'
 mkdir -p ~/bin
 chmod 777 ~/bin
@@ -224,10 +200,7 @@ echo "export EXPERIMENTAL_USE_JAVA7=true" >> ~/.bashrc
 echo '\033[1;31mInstalling CCACHE in your .bashrc thanks to crewrktablets.de\e[0m'
 echo "export USE_CCACHE=1" >> ~/.bashrc
 echo '\033[1;31mCCACHE directory in ~/CCACHE\e[0m'
-mkdir ~/CCACHE
-chmod 777 -R ~/CCACHE
-echo "export CCACHE_DIR=~/CCACHE" >> ~/.bashrc
-ccache -M 30GB ~/CCACHE
+ccache -M 30GB ~/.ccache
 echo '\033[1;31mInstalling REPO\e[0m'
 mkdir -p ~/bin
 chmod 777 ~/bin
@@ -256,10 +229,7 @@ sleep 20
 echo '\033[1;31mInstalling CCACHE in your .bashrc thanks to crewrktablets.de\e[0m'
 echo "export USE_CCACHE=1" >> ~/.bashrc
 echo '\033[1;31mCCACHE directory in ~/CCACHE\e[0m'
-mkdir ~/CCACHE
-chmod 777 -R ~/CCACHE
-echo "export CCACHE_DIR=~/CCACHE" >> ~/.bashrc
-ccache -M 30GB ~/CCACHE
+ccache -M 30GB ~/.ccache
 echo '\033[1;31mInstalling REPO\e[0m'
 mkdir -p ~/bin
 chmod 777 ~/bin
