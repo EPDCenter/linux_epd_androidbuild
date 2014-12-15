@@ -33,7 +33,7 @@ echo 'Done'
 echo 'thanks to E.P.D. Center // http://epdcenter.es'
 fi
 
-if [ $var1 = ubuntu_A4 ]; 
+if [ $var1 = ubuntu_A4 ];
 then
 echo 'Installing dependencies of Ubuntu 14.04 and OpenJDK 6'
 apt-get install git-core gnupg flex bison gperf android-tools-adb libsdl1.2-dev ccache libesd0-dev libwxgtk2.8-dev squashfs-tools build-essential zip curl libncurses5-dev zlib1g-dev pngcrush schedtool libxml2 libxml2-utils xsltproc lzop libc6-dev schedtool g++-multilib lib32z1-dev lib32ncurses5-dev lib32readline-gplv2-dev gcc-multilib openjdk-6-jre openjdk-6-jdk -y
