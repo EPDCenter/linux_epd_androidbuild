@@ -4,7 +4,7 @@ var1=$1
 if [ $var1 = ubuntu_A5 ];
 then
 echo 'Installing dependencies of Ubuntu 14.04 and OpenJDK 7'
-apt-get install git-core gnupg android-tools-adb flex bison gperf libsdl1.2-dev libesd0-dev libwxgtk2.8-dev squashfs-tools build-essential zip curl libncurses5-dev zlib1g-dev openjdk-7-jre openjdk-7-jdk pngcrush schedtool libxml2 libxml2-utils xsltproc lzop libc6-dev schedtool g++-multilib lib32z1-dev lib32ncurses5-dev lib32readline-gplv2-dev gcc-multilib -y
+apt-get install git-core gnupg android-tools-adb flex bison gperf libsdl1.2-dev ccache libesd0-dev libwxgtk2.8-dev squashfs-tools build-essential zip curl libncurses5-dev zlib1g-dev openjdk-7-jre openjdk-7-jdk pngcrush schedtool libxml2 libxml2-utils xsltproc lzop libc6-dev schedtool g++-multilib lib32z1-dev lib32ncurses5-dev lib32readline-gplv2-dev gcc-multilib -y
 sleep 20
 echo 'Installing CCACHE in your .bashrc thanks to crewrktablets'
 echo "export USE_CCACHE=1" >> ~/.bashrc
@@ -36,7 +36,7 @@ fi
 if [ $var1 = ubuntu_A4 ]; 
 then
 echo 'Installing dependencies of Ubuntu 14.04 and OpenJDK 6'
-apt-get install git-core gnupg flex bison gperf android-tools-adb libsdl1.2-dev libesd0-dev libwxgtk2.8-dev squashfs-tools build-essential zip curl libncurses5-dev zlib1g-dev pngcrush schedtool libxml2 libxml2-utils xsltproc lzop libc6-dev schedtool g++-multilib lib32z1-dev lib32ncurses5-dev lib32readline-gplv2-dev gcc-multilib openjdk-6-jre openjdk-6-jdk -y
+apt-get install git-core gnupg flex bison gperf android-tools-adb libsdl1.2-dev ccache libesd0-dev libwxgtk2.8-dev squashfs-tools build-essential zip curl libncurses5-dev zlib1g-dev pngcrush schedtool libxml2 libxml2-utils xsltproc lzop libc6-dev schedtool g++-multilib lib32z1-dev lib32ncurses5-dev lib32readline-gplv2-dev gcc-multilib openjdk-6-jre openjdk-6-jdk -y
 sleep 20
 echo 'Installing CCACHE in your .bashrc thanks to crewrktablets.de'
 echo "export USE_CCACHE=1" >> ~/.bashrc
