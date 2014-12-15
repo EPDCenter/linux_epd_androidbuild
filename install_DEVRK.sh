@@ -287,7 +287,7 @@ udevadm control --reload-rules
 sleep 2
 mkdir ~/.android
 touch ~/.android/adb_usb.ini
-echo '0x2207' >> .android/adb_usb.ini
+echo '0x2207' >> ~/.android/adb_usb.ini
 sleep 5
 echo -e '\033[1;33mDone\e[0m'
 echo -e '\033[1;33mThanks to E.P.D. Center // http://epdcenter.es\e[0m'
