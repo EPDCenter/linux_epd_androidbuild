@@ -37,9 +37,9 @@ echo 'Installing REPO in your .bashrc'
 echo "export PATH=~/bin:$PATH" >> ~/.bashrc
 echo "umask 022" >> ~/.bashrc
 echo 'Downloading prebuilts tools (arm-eabi 4.6) ~/DEV'
-mkdir DEV
-chmod 777 -R DEV
-cd DEV
+mkdir ~/DEV
+chmod 777 -R ~/DEV
+cd ~/DEV
 git clone https://github.com/EPDCenterSpain/rk-prebuilts.git
 sleep 20
 chmod 777 -R rk-prebuilts
@@ -69,9 +69,9 @@ echo 'Installing REPO in your .bashrc'
 echo "export PATH=~/bin:$PATH" >> ~/.bashrc
 echo "umask 022" >> ~/.bashrc
 echo 'Downloading prebuilts tools (arm-eabi 4.6) in ~/DEV'
-mkdir DEV
-chmod 777 -R DEV
-cd DEV
+mkdir ~/DEV
+chmod 777 -R ~/DEV
+cd ~/DEV
 git clone https://github.com/EPDCenterSpain/rk-prebuilts.git
 sleep 20
 chmod 777 -R rk-prebuilts
@@ -100,9 +100,9 @@ echo 'Installing REPO in your .bashrc'
 echo "export PATH=~/bin:$PATH" >> ~/.bashrc
 echo "umask 022" >> ~/.bashrc
 echo 'Downloading prebuilts tools (arm-eabi 4.6) ~/DEV'
-mkdir DEV
-chmod 777 -R DEV
-cd DEV
+mkdir ~/DEV
+chmod 777 -R ~/DEV
+cd ~/DEV
 git clone https://github.com/EPDCenterSpain/rk-prebuilts.git
 sleep 20
 chmod 777 -R rk-prebuilts
@@ -131,8 +131,8 @@ echo 'Installing REPO in your .bashrc'
 echo "export PATH=~/bin:$PATH" >> ~/.bashrc
 echo "umask 022" >> ~/.bashrc
 echo 'Downloading prebuilts tools (arm-eabi 4.6) ~/DEV'
-mkdir DEV
-chmod 777 -R DEV
+mkdir ~/DEV
+chmod 777 -R ~/DEV
 cd DEV
 git clone https://github.com/EPDCenterSpain/rk-prebuilts.git
 sleep 20
@@ -166,9 +166,9 @@ echo 'Installing REPO in your .bashrc'
 echo "export PATH=~/bin:$PATH" >> ~/.bashrc
 echo "umask 022" >> ~/.bashrc
 echo 'Downloading prebuilts tools (arm-eabi 4.6) in ~/DEV'
-mkdir DEV
-chmod 777 -R DEV
-cd DEV
+mkdir ~/DEV
+chmod 777 -R ~/DEV
+cd ~/DEV
 git clone https://github.com/EPDCenterSpain/rk-prebuilts.git
 sleep 20
 chmod 777 -R rk-prebuilts
@@ -204,8 +204,8 @@ echo 'Installing REPO in your .bashrc'
 echo "export PATH=~/bin:$PATH" >> ~/.bashrc
 echo "umask 022" >> ~/.bashrc
 echo 'Downloading prebuilts tools (arm-eabi 4.6) in ~/DEV'
-mkdir DEV
-chmod 777 DEV
+mkdir ~/DEV
+chmod 777 ~/DEV
 cd DEV
 git clone https://github.com/EPDCenterSpain/rk-prebuilts.git
 sleep 20
@@ -238,9 +238,9 @@ echo 'Installing REPO in your .bashrc'
 echo "export PATH=~/bin:$PATH" >> ~/.bashrc
 echo "umask 022" >> ~/.bashrc
 echo 'Downloading prebuilts tools (arm-eabi 4.6) in ~/DEV'
-mkdir DEV
-chmod 777 -R DEV
-cd DEV
+mkdir ~/DEV
+chmod 777 -R ~/DEV
+cd ~/DEV
 git clone https://github.com/EPDCenterSpain/rk-prebuilts.git
 sleep 20
 chmod 777 -R rk-prebuilts
@@ -270,8 +270,8 @@ echo 'Installing REPO in your .bashrc'
 echo "export PATH=~/bin:$PATH" >> ~/.bashrc
 echo "umask 022" >> ~/.bashrc
 echo 'Downloading prebuilts tools (arm-eabi 4.6) in ~/DEV'
-mkdir DEV
-chmod 777 -R DEV
+mkdir ~/DEV
+chmod 777 -R ~/DEV
 cd DEV
 git clone https://github.com/EPDCenterSpain/rk-prebuilts.git
 chmod 777 -R rk-prebuilts
@@ -296,7 +296,7 @@ touch /etc/udev/rules.d/51-android.rules
 echo 'SUBSYSTEM=="usb", ATTR{idVendor}=="2207", MODE="0666", GROUP="plugdev"' >> /etc/udev/rules.d/51-android.rules
 udevadm control --reload-rules
 sleep 2
-mkdir .android
+mkdir ~/.android
 touch ~/.android/adb_usb.ini
 echo '0x2207' >> .android/adb_usb.ini
 chmod 777 -R ~/.android
