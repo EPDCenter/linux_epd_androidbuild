@@ -149,7 +149,7 @@ fi
 if [ $var1 = fedora_A4 ];
 then
 echo 'Installing dependencies of Fedora and OpenJDK6'
-yum install glibc.i686 glibc-devel.i686 libstdc++.i686 zlib-devel.i686 \ ncurses-devel.i686 libX11-devel.i686 libXrender.i686 libXrandr.i686 gcc gcc-c++ gperf \ flex bison glibc-devel.{x86_64,i686} zlib-devel.{x86_64,i686} ncurses-devel.i686 libsx-devel \ readline-devel.i686 perl-Switch git gpg java-1.7.0-openjdk-devel.x86_64 schedtool java-1.6.0-openjdk-devel
+yum install glibc.i686 glibc-devel.i686 libstdc++.i686 android-tools zlib-devel.i686 \ ncurses-devel.i686 libX11-devel.i686 libXrender.i686 libXrandr.i686 gcc gcc-c++ gperf \ flex bison glibc-devel.{x86_64,i686} zlib-devel.{x86_64,i686} ncurses-devel.i686 libsx-devel \ readline-devel.i686 perl-Switch git gpg java-1.7.0-openjdk-devel.x86_64 schedtool java-1.6.0-openjdk-devel
 sleep 20
 echo 'Installing CCACHE in your .bashrc'
 echo "export USE_CCACHE=1" >> ~/.bashrc
