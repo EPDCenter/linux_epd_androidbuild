@@ -47,3 +47,4 @@ $./EPD_Androidbuild.sh rockchip
 
 Rockchip Tools || Credits to crewrktablets : JochenKauz and Astralix.   
  
+LICENSE: Creative Commons Attribution-NonCommercial-ShareAlike 4.0
