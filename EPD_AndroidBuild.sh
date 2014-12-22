@@ -177,9 +177,11 @@ sleep 5
 echo -e '\033[1;31mInstalling dependencies of ArchLinux and OpenJDK 7, you needs multilib repository in /etc/pacman.conf and yaourt:\e[0m'
 sudo pacman -Syyu  ccache android-tools base-devel jre7-openjdk-headless jre7-openjdk jdk7-openjdk gcc git gnupg flex bison gperf sdl wxgtk squashfs-tools curl ncurses zlib schedtool perl-switch zip unzip libxslt libxml2 lzo lzop python2 gcc-multilib lib32-zlib lib32-ncurses lib32-readline python-virtualenvwrapper
 sleep 5
-sudo source /usr/bin/virtualenvwrapper.h
-sudo mkvirtualenv -p `which python2` python2
-sudo workon python2
+sudo rm /usr/bin/python
+sudo ln -s /usr/bin/python2 /usr/bin/python
+sudo mkdir /opt/android-build
+sudo cd /opt/android-build
+sudo ln -s $(which python2) python
 echo -e '\033[1;31mSelect the versin of java:\e[0m'
 sudo update-alternatives --config java 
 sleep 5
